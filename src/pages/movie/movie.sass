@@ -1,0 +1,91 @@
+.movie
+    min-height: 100vh
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+    &__dark
+        position: absolute
+        top: 64px
+        left: 0
+        min-height: 100vh
+        width: 100%
+        background-color: #050404b3
+        display: flex
+        align-items: center
+
+    > .ant-row
+        height: 100%
+        display: flex
+        align-items: center
+    &__poster
+        height: calc( 70vh )
+        padding: 1rem
+        div
+            height: 100%
+            width: 100%
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain
+        @media (max-width: 800px)    
+            height: 40%
+
+    &__info
+        height: 70%
+        display: flex
+        align-items: center
+        *
+            color: white
+        @media (max-width: 800px)
+            height: 60%
+            width: 90%
+            font-size: 1.75vw
+        @media (max-width: 500px)
+            font-size: 2.7vw
+
+.info
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    @media (max-width: 800px)
+        width: 90%
+        margin: 0 auto
+    *
+        color: white
+    > :first-child
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+        width: 100%
+        @media (max-width: 800px)
+            flex-direction: column
+            margin-bottom: 1.2rem
+    &__mainTitle
+        font-size: 2.2em
+        span
+            font-size: 1em
+            color: grey
+    &__button
+        background-color: transparent !important
+        border: none
+        font-size: 1.5em !important
+        @media (max-width: 800px)
+            padding: 0 !important
+    &__subTitle
+        font-size: 2em
+    &__description, &__genres
+        font-size: 1.2em
+    &__genres
+        margin-left: 4rem !important
+        @media (max-width: 800px)
+            display: flex
+            margin-left: 0 !important
+            li
+                margin: 0 0.75rem
+
+
+.provisory-title
+    text-align: center
+    margin: 5rem
+    font-size: 2rem
